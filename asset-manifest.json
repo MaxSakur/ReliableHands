@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/ReliableHands/static/css/main.8cf99598.css",
+    "main.js": "/ReliableHands/static/js/main.2d5ce035.js",
+    "static/media/about-3.jpg": "/ReliableHands/static/media/about-3.5687f06d8d7456724506.jpg",
+    "static/media/about-1.jpg": "/ReliableHands/static/media/about-1.f20d414498c2ce0df92e.jpg",
+    "static/media/about-2.jpg": "/ReliableHands/static/media/about-2.4f66b3c366c01bea805e.jpg",
+    "static/media/Montserrat-Italic-VariableFont_wght.ttf": "/ReliableHands/static/media/Montserrat-Italic-VariableFont_wght.e8f632769d4c298b0319.ttf",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/ReliableHands/static/media/Montserrat-VariableFont_wght.4df14eb5e72bf55c4497.ttf",
+    "static/media/home.mp4": "/ReliableHands/static/media/home.144391604915c5b69f39.mp4",
+    "static/media/services.mp4": "/ReliableHands/static/media/services.1317f547252092cb2396.mp4",
+    "static/media/service-diff-animals.jpg": "/ReliableHands/static/media/service-diff-animals.e780f52fd4df9eab1d0c.jpg",
+    "static/media/DMSans-Italic-VariableFont_opsz,wght.ttf": "/ReliableHands/static/media/DMSans-Italic-VariableFont_opsz,wght.3812fdba66bd4e31febd.ttf",
+    "static/media/DMSans-VariableFont_opsz,wght.ttf": "/ReliableHands/static/media/DMSans-VariableFont_opsz,wght.b230ddb7eabb4b25e123.ttf",
+    "static/media/Outfit-VariableFont_wght.ttf": "/ReliableHands/static/media/Outfit-VariableFont_wght.00c2ed1a3bf798b0da27.ttf",
+    "static/media/service-diagnostic.jpg": "/ReliableHands/static/media/service-diagnostic.037dc5762e7ea2a3e6db.jpg",
+    "static/media/service-cure.jpg": "/ReliableHands/static/media/service-cure.3035e60fb2ee8136f46d.jpg",
+    "static/media/service-profilactic.jpg": "/ReliableHands/static/media/service-profilactic.f9e4907639bc6c2cb26a.jpg",
+    "static/media/logo.jpg": "/ReliableHands/static/media/logo.46f52172f4337a8b2f00.jpg",
+    "index.html": "/ReliableHands/index.html",
+    "main.8cf99598.css.map": "/ReliableHands/static/css/main.8cf99598.css.map",
+    "main.2d5ce035.js.map": "/ReliableHands/static/js/main.2d5ce035.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8cf99598.css",
+    "static/js/main.2d5ce035.js"
+  ]
+}
