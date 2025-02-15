@@ -1,0 +1,97 @@
+
+.container {
+  position: relative;
+  background-color: var(--color-secondary);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: calc(var(--sidebar-default-width) * -1);
+  width: var(--sidebar-expanded-width);
+  height: 100vh;
+  background-color: var(--color-sidebar-background);
+  color: var(--color-sidebar-text);
+  padding: var(--padding-sidebar);
+  box-shadow: var(--box-shadow-sidebar);
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.sidebar.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: calc(var(--page-padding) / 1.2);
+  width: 1px;
+  height: 0;
+  background: linear-gradient(to top, var(--color-secondary) 60%, transparent 100%);
+  z-index: 500;
+  animation: growLine 0.5s ease-in-out forwards;
+}
+
+@keyframes growLine {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.sidebar.active {
+  left: 0
+}
+
+.closeButton {
+  cursor: pointer;
+  position: absolute;
+  top: var(--spacing-lg);
+  right: var(--spacing-lg);
+}
+
+.logo {
+  width: 50%;
+  border-radius: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0px;
+}
+
+.menu a {
+  color: var(--color-sidebar-text);
+  text-decoration: none;
+  font-size: 20px;
+  padding: var(--spacing-md) 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.menu a:hover {
+  color: var(--color-link-hover);
+}
+
+.menu a.activeLink {
+  color: var(--color-accent);
+}
+
+.pageName {
+  position: absolute;
+  bottom: 140px;
+  right: -12px;
+  transform: rotate(270deg);
+  font-size: 32px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--overlay-background);
+  z-index: 500;
+  transition: opacity 0.3s ease-in-out;
+}

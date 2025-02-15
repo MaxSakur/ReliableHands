@@ -1,0 +1,90 @@
+:root {
+  /* Colors */
+  --color-primary: #1E4DA1;
+  --color-primary-50: rgba(30, 77, 161, 0.5);
+  --color-primary-10: rgba(30, 77, 161, 0.1);
+
+  --color-secondary: #F4F4F9;
+  --color-secondary-50: rgba(244, 244, 249, 0.5);
+  --color-secondary-10: rgba(244, 244, 249, 0.1);
+
+  --color-accent: #FFB347;
+  --color-accent-50: rgba(255, 179, 71, 0.5);
+  --color-accent-10: rgba(255, 179, 71, 0.1);
+
+  --color-neutral: #333333;
+  --color-neutral-50: rgba(51, 51, 51, 0.5);
+  --color-neutral-10: rgba(51, 51, 51, 0.1);
+  
+  --color-text-primary: var(--color-neutral);
+  --color-sidebar-background: var(--color-primary);
+  --color-sidebar-text: white;
+  --color-link-hover: var(--color-accent);
+  --color-background: var(--color-secondary);
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --padding-sidebar: var(--spacing-lg);
+  --padding-button: var(--spacing-md);
+
+  /* Layout */
+  --sidebar-default-width: 255px;
+  --sidebar-expanded-width: 300px;
+  --page-padding: 120px;
+
+  /* Shadows */
+  --box-shadow-sidebar: 2px 0 5px rgba(0, 0, 0, 0.5);
+  --overlay-background: rgba(0, 0, 0, 0.5);
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype'),
+       url('./fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal, italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('./fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf') format('truetype'),
+       url('./fonts/DM_Sans/DMSans-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal, italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./fonts/Outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

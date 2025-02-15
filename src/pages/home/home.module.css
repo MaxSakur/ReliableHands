@@ -1,0 +1,189 @@
+
+.home {
+    display: flex;
+    width: calc(var(--sidebar-expanded-width) * 3);
+    background: linear-gradient(50deg, var(--color-secondary-50) 40%, var(--color-primary) 80%);
+    color: var(--color-neutral);
+    border-top-left-radius: var(--spacing-lg);
+    border-bottom-left-radius: var(--spacing-lg);
+    z-index: -1;
+    opacity: 0.9;
+    overflow: hidden;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+
+/* LEFT PART (INFO) */
+.leftPart {
+    flex: 2;
+    text-align: center;
+    color: var(--color-neutral);
+    font-family: 'Outfit', sans-serif;
+    background: linear-gradient(270deg, var(--color-secondary-50) 0%, var(--color-secondary) 20%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-lg) 0;
+}
+
+.leftPart ul {
+    display: flex;
+    flex: 1;
+    min-width: 300px;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.leftPart ul li {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--color-secondary);
+    border-radius: var(--spacing-md);
+    overflow: hidden;
+    box-shadow: var(--box-shadow-sidebar);
+}
+
+.leftPartLogo {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+.name {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-primary);
+    margin: var(--spacing-lg) 0 var(--spacing-sm);
+    display: inline-block;
+    padding-bottom: var(--spacing-md);
+}
+
+.leftPartInfo {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    border: 1px solid var(--color-primary);
+    min-height: calc(var(--spacing-lg) * 2);
+    position: relative;
+    
+}
+
+.icon {
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    padding: 0 var(--spacing-md);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.leftPartInfoContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
+    flex: 1;
+}
+
+.leftPartInfoPhones {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-left: 1px solid var(--color-primary);
+}
+
+.leftPartInfoPhones a {
+    border-bottom: 1px solid var(--color-primary);
+}
+
+.leftPartInfoPhones a:last-child {
+    border-bottom: none;
+}
+
+
+.phoneButton {
+    display: block;
+    padding: var(--spacing-sm);
+    color: var(--color-neutral);
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.phoneButton:hover {
+    background-color: var(--color-accent);
+    color: var(--color-secondary);
+    transition: all 0.3s ease;
+}
+
+
+.leftPartInfoAddress {
+    display: flex;
+    min-height: inherit;
+    flex-direction: column;
+    flex: 1;
+    border-left: 1px solid var(--color-primary);
+}
+
+.leftPartInfoAddress > p:first-child {
+    flex: 1;
+    padding: var(--spacing-sm);
+}
+
+.leftPartInfoAddress button {
+    flex: 1;
+    border: none;
+    font-size: 16px;
+    color: var(--color-neutral);
+    padding: var(--spacing-sm);
+    border-top: 1px solid var(--color-primary)
+}
+
+.leftPartInfoAddress button:hover {
+    background-color: var(--color-accent);
+    transition: all 0.3s ease;
+    color: var(--color-secondary);
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* RIGHT PART (ANIMATED OPTIONS) */
+.home .rightPart {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    z-index: 2;
+}
+
+.home .rightPart li {
+    border: 1px solid var(--color-secondary);
+    padding: var(--spacing-md) 0;
+    text-align: center;
+    color: white;
+    transition: all .3s ease-in-out;
+    font-weight: 500;
+}
+
+.home .rightPart li.activeItem {
+    background-color: var(--color-primary);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
