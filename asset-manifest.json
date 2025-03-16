@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ReliableHands/static/css/main.ed48b107.css",
-    "main.js": "/ReliableHands/static/js/main.610120e4.js",
+    "main.css": "/ReliableHands/static/css/main.f701fe4c.css",
+    "main.js": "/ReliableHands/static/js/main.9a4e881c.js",
     "static/media/service-diagnostic.mov": "/ReliableHands/static/media/service-diagnostic.f6deaf0d705bc8e97412.mov",
     "static/media/about-3.jpg": "/ReliableHands/static/media/about-3.5687f06d8d7456724506.jpg",
     "static/media/about-1.jpg": "/ReliableHands/static/media/about-1.f20d414498c2ce0df92e.jpg",
@@ -13,19 +13,25 @@
     "static/media/service-animal-hospital.jpg": "/ReliableHands/static/media/service-animal-hospital.69d9df4fc3931b7813cd.jpg",
     "static/media/DMSans-Italic-VariableFont_opsz,wght.ttf": "/ReliableHands/static/media/DMSans-Italic-VariableFont_opsz,wght.3812fdba66bd4e31febd.ttf",
     "static/media/DMSans-VariableFont_opsz,wght.ttf": "/ReliableHands/static/media/DMSans-VariableFont_opsz,wght.b230ddb7eabb4b25e123.ttf",
+    "static/media/service-animal-hospital2.jpg": "/ReliableHands/static/media/service-animal-hospital2.eb69a6315bd349cafa0d.jpg",
+    "static/media/service-diagnostic5.jpg": "/ReliableHands/static/media/service-diagnostic5.0316023b18fc13fba26f.jpg",
     "static/media/service-grooming2.jpg": "/ReliableHands/static/media/service-grooming2.3b89135cbf299148d7e2.jpg",
     "static/media/service-grooming.jpg": "/ReliableHands/static/media/service-grooming.564466a71f8e7507c750.jpg",
     "static/media/service-food.jpg": "/ReliableHands/static/media/service-food.731463ad03800bfe5b0a.jpg",
     "static/media/service-default.jpg": "/ReliableHands/static/media/service-default.852a7cea5a154a4c22ea.jpg",
     "static/media/service-surgery.jpg": "/ReliableHands/static/media/service-surgery.c3cb818fc12ac7c74daa.jpg",
     "static/media/Outfit-VariableFont_wght.ttf": "/ReliableHands/static/media/Outfit-VariableFont_wght.00c2ed1a3bf798b0da27.ttf",
+    "static/media/service-diagnostic2.jpg": "/ReliableHands/static/media/service-diagnostic2.037dc5762e7ea2a3e6db.jpg",
     "static/media/service-cure.jpg": "/ReliableHands/static/media/service-cure.3035e60fb2ee8136f46d.jpg",
+    "static/media/service-surgery2.jpg": "/ReliableHands/static/media/service-surgery2.61eb4679aa14d5d7b4e0.jpg",
+    "static/media/service-diagnostic3.jpg": "/ReliableHands/static/media/service-diagnostic3.61c16c1357dd66b9d791.jpg",
+    "static/media/service-diagnostic4.jpg": "/ReliableHands/static/media/service-diagnostic4.f9e4907639bc6c2cb26a.jpg",
     "index.html": "/ReliableHands/index.html",
-    "main.ed48b107.css.map": "/ReliableHands/static/css/main.ed48b107.css.map",
-    "main.610120e4.js.map": "/ReliableHands/static/js/main.610120e4.js.map"
+    "main.f701fe4c.css.map": "/ReliableHands/static/css/main.f701fe4c.css.map",
+    "main.9a4e881c.js.map": "/ReliableHands/static/js/main.9a4e881c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed48b107.css",
-    "static/js/main.610120e4.js"
+    "static/css/main.f701fe4c.css",
+    "static/js/main.9a4e881c.js"
   ]
 }
