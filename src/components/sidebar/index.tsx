@@ -3,8 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import styles from './sidebar.module.css';
 import Hamburger from "hamburger-react";
 
-const logoImgPath = require('../../media/logo.jpg');
-
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -36,20 +34,22 @@ export const Sidebar = () => {
         <div className={styles.closeButton}>
           <Hamburger toggled={isOpen} toggle={toggleSidebar} />
         </div>
-
-        <img className={styles.logo} src={logoImgPath} alt="Logo" />
-        <nav className={styles.menu}>
-          {pages.map(({ path, name }) => (
-            <Link
+        {isOpen && 
+          <nav className={styles.menu}>
+            {pages.map(({ path, name }) => (
+              <Link
               key={path}
               to={path}
               onClick={closeSidebar}
               className={pageName === name ? styles.activeLink : ''}
-            >
-              {name}
-            </Link>
-          ))}
-        </nav>
+              >
+                {name}
+              </Link>
+            ))}
+          </nav>
+            
+        }
+
         
         <div className={styles.pageName}>
           <p>{pageName}</p>

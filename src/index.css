@@ -32,8 +32,9 @@
   --padding-button: var(--spacing-md);
 
   /* Layout */
-  --sidebar-default-width: 255px;
+  --sidebar-default-width: 240px;
   --sidebar-expanded-width: 300px;
+  --sidebar-size: calc(var(--sidebar-expanded-width) - var(--sidebar-default-width));
   --page-padding: 120px;
 
   /* Shadows */

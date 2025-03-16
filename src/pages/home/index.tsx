@@ -4,18 +4,17 @@ import Logo from '../../components/logo';
 import { Phone, MapPin, Clock } from 'lucide-react';
 
 const homeLinks = [
-    'Хірургія',
-    'Лабораторні',
-    'Дослідження',
-    'Вакцинація',
     'Терапія',
+    'Хірургія',
+    'Візуальна діагностика',
+    'Лабораторні дослідження',
     'Корми',
-    'Дієти',
-    'УЗД',
+    'Аптека',
     'Стаціонар для тварин',
+    'Грумінг',
 ];
 
-const Home: React.FC = () => {
+export const Home: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     useEffect(() => {
@@ -29,16 +28,21 @@ const Home: React.FC = () => {
 
     const openGoogleMaps = () => {
         if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(position => {
-                const { latitude, longitude } = position.coords;
-                const destination = 'ул. Новая, 3б, Гореничи, Киевская область, 08114';
-                const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&origin=${latitude},${longitude}&destination=${encodeURIComponent(destination)}&travelmode=driving`;
-                window.open(googleMapsUrl, '_blank');
-            }, error => {
-                alert('Не удалось определить ваше местоположение. Разрешите доступ к геолокации.' + error.message);
-            });
+            navigator.geolocation.getCurrentPosition(
+                position => {
+                    const { latitude, longitude } = position.coords;
+                    const destination = 'вул. Нова, 3Б, Гореничі, Київська область, 08114';
+                    const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&origin=${latitude},${longitude}&destination=${encodeURIComponent(
+                        destination
+                    )}&travelmode=driving`;
+                    window.open(googleMapsUrl, '_blank');
+                },
+                error => {
+                    alert('Не вдалося визначити ваше місцезнаходження. Дозвольте доступ до геолокації. ' + error.message);
+                }
+            );
         } else {
-            alert('Геолокация не поддерживается вашим браузером.');
+            alert('Геолокація не підтримується вашим браузером.');
         }
     };
 
@@ -47,7 +51,9 @@ const Home: React.FC = () => {
             <div className={styles.leftPart}>
                 <div className={styles.leftPartLogo}>
                     <Logo className={styles.logo} />
-                    <p className={styles.name}>Ветеринарна Клініка <br /> "Надійні Руки"</p>
+                    <p className={styles.name}>
+                        Ветеринарна Клініка <br /> "Надійні Руки"
+                    </p>
                 </div>
 
                 <ul>
@@ -63,21 +69,21 @@ const Home: React.FC = () => {
                         </div>
                     </li>
 
-                    <li className={styles.leftPartInfo} >
+                    <li className={styles.leftPartInfo}>
                         <MapPin className={styles.icon} />
                         <div className={styles.leftPartInfoAddress}>
-                            <p>с. Гореничі, вул.Нова, 3Б</p>
+                            <p>с. Гореничі, вул. Нова, 3Б</p>
                             <button className={styles.mapButton} onClick={openGoogleMaps}>
                                 <p>Прокласти маршрут</p>
                             </button>
-
                         </div>
                     </li>
 
                     <li className={styles.leftPartInfo}>
                         <Clock className={styles.icon} />
                         <div className={styles.leftPartInfoContent}>
-                            <p>9:00 до 20:00</p>
+                            <p>Щоденно</p>
+                            <p>з 9:00 до 20:00</p>
                         </div>
                     </li>
                 </ul>
@@ -85,11 +91,11 @@ const Home: React.FC = () => {
 
             <ul className={styles.rightPart}>
                 {homeLinks.map((link, index) => (
-                    <li key={index} className={index === activeIndex ? styles.activeItem : ''}>{link}</li>
+                    <li key={index} className={index === activeIndex ? styles.activeItem : ''}>
+                        {link}
+                    </li>
                 ))}
             </ul>
         </div>
     );
 };
-
-export default Home;

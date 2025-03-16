@@ -1,0 +1,48 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+  
+  .carouselInner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+  }
+  
+  .carouselItem {
+    flex: 0 0 100%;
+    height: 100%;
+    background-color: aqua;
+  }
+  
+  .media {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .carouselDots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+  }
+  
+  .carouselDots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+  
+  .carouselDots button.active {
+    background: rgba(255, 255, 255, 0.9);
+  }
