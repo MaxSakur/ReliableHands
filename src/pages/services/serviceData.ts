@@ -1,12 +1,17 @@
 import { ContentLinkType } from "components/content";
 
-
 const serviceDefault = require('../../media/service-default.jpg');
 const visualDiagnosis = require('../../media/service-diagnostic.mov');
+const visualDiagnosis2 = require('../../media/service-diagnostic2.jpg');
+const visualDiagnosis3 = require('../../media/service-diagnostic3.jpg');
+const visualDiagnosis4 = require('../../media/service-diagnostic4.jpg');
+const visualDiagnosis5 = require('../../media/service-diagnostic5.jpg');
 const grooming = require('../../media/service-grooming.jpg');
 const grooming2 = require('../../media/service-grooming2.jpg');
 const surgery = require('../../media/service-surgery.jpg');
+const surgery2 = require('../../media/service-surgery2.jpg');
 const animalHospital = require('../../media/service-animal-hospital.jpg');
+const animalHospital2 = require('../../media/service-animal-hospital2.jpg');
 const animalFood = require('../../media/service-food.jpg');
 const laboratory = require('../../media/service-cure.jpg');
 
@@ -44,7 +49,7 @@ export const servicesData: ContentLinkType[] = [
       name: 'Хірургія',
       description: 'Опис для Хірургії.',
       lists: [],
-      images: [surgery],
+      images: [surgery, surgery2],
     },
     {
       name: 'Візуальна діагностика',
@@ -60,7 +65,7 @@ export const servicesData: ContentLinkType[] = [
           ]
         }
       ],
-      images: [visualDiagnosis],
+      images: [visualDiagnosis, visualDiagnosis2, visualDiagnosis3, visualDiagnosis4, visualDiagnosis5],
     },
     {
       name: 'Лабораторні дослідження',
@@ -112,7 +117,7 @@ export const servicesData: ContentLinkType[] = [
       name: 'Стаціонар для тварин',
       description: 'Опис для стаціонару для тварин.',
       lists: [],
-      images: [animalHospital],
+      images: [animalHospital, animalHospital2],
     },
     {
       name: 'Грумінг',
