@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/ReliableHands/static/css/main.f701fe4c.css",
-    "main.js": "/ReliableHands/static/js/main.9a4e881c.js",
+    "main.css": "/ReliableHands/static/css/main.5e746fe2.css",
+    "main.js": "/ReliableHands/static/js/main.78183319.js",
     "static/media/service-diagnostic.mov": "/ReliableHands/static/media/service-diagnostic.f6deaf0d705bc8e97412.mov",
     "static/media/about-3.jpg": "/ReliableHands/static/media/about-3.5687f06d8d7456724506.jpg",
+    "static/media/about-5.jpg": "/ReliableHands/static/media/about-5.620b4e013178aef34dfe.jpg",
+    "static/media/about-4.jpg": "/ReliableHands/static/media/about-4.685c571fce7ef3ad5bd7.jpg",
     "static/media/about-1.jpg": "/ReliableHands/static/media/about-1.f20d414498c2ce0df92e.jpg",
     "static/media/about-2.jpg": "/ReliableHands/static/media/about-2.4f66b3c366c01bea805e.jpg",
+    "static/media/about-6.jpg": "/ReliableHands/static/media/about-6.bb32ab7fe8788ad8ea42.jpg",
     "static/media/Montserrat-Italic-VariableFont_wght.ttf": "/ReliableHands/static/media/Montserrat-Italic-VariableFont_wght.e8f632769d4c298b0319.ttf",
     "static/media/Montserrat-VariableFont_wght.ttf": "/ReliableHands/static/media/Montserrat-VariableFont_wght.4df14eb5e72bf55c4497.ttf",
     "static/media/home.mp4": "/ReliableHands/static/media/home.144391604915c5b69f39.mp4",
@@ -27,11 +30,11 @@
     "static/media/service-diagnostic3.jpg": "/ReliableHands/static/media/service-diagnostic3.61c16c1357dd66b9d791.jpg",
     "static/media/service-diagnostic4.jpg": "/ReliableHands/static/media/service-diagnostic4.f9e4907639bc6c2cb26a.jpg",
     "index.html": "/ReliableHands/index.html",
-    "main.f701fe4c.css.map": "/ReliableHands/static/css/main.f701fe4c.css.map",
-    "main.9a4e881c.js.map": "/ReliableHands/static/js/main.9a4e881c.js.map"
+    "main.5e746fe2.css.map": "/ReliableHands/static/css/main.5e746fe2.css.map",
+    "main.78183319.js.map": "/ReliableHands/static/js/main.78183319.js.map"
   },
   "entrypoints": [
-    "static/css/main.f701fe4c.css",
-    "static/js/main.9a4e881c.js"
+    "static/css/main.5e746fe2.css",
+    "static/js/main.78183319.js"
   ]
 }
