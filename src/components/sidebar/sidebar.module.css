@@ -16,8 +16,10 @@
   box-shadow: var(--box-shadow-sidebar);
   transition: left 0.3s ease-in-out;
   z-index: 1000;
-  transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
 }
+
+
 
 .sidebar.active::after {
   content: '';
@@ -29,7 +31,6 @@
   background: linear-gradient(to top, var(--color-secondary) 60%, transparent 100%);
   z-index: 500;
   animation: growLine 0.5s ease-in-out forwards;
-
 }
 
 @keyframes growLine {
@@ -99,4 +100,48 @@
   background-color: var(--overlay-background);
   z-index: 500;
   transition: opacity 0.3s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: var(--spacing-xl);
+    padding: var(--spacing-md);
+    justify-content: space-between;
+  }
+
+  .sidebar.active {
+    bottom: 0;
+    width: 100vw;
+    height: auto;
+  }
+
+  .sidebar.active > .pageName {
+    display: none;
+  }
+
+  .menu a {
+    font-size: 32px;
+  }
+  
+  .sidebar.active::after {
+    display: none;
+  }
+
+  .closeButton {
+    top: var(--spacing-sm);
+    left: var(--spacing-sm);
+  }
+
+  .pageName {
+    display: block;
+    position: relative;
+    bottom: 0;
+    left: auto;
+    right: -50px;
+    transform: rotate(0);
+    font-size: 24px;
+    width: calc(100% - 32px);
+  }
 }

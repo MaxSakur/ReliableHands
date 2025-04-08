@@ -32,3 +32,17 @@
     padding: 0 var(--page-padding);
     background-color: transparent;
 }
+
+
+@media (max-width: 768px) {
+    .backgroundContainer {
+        overflow: scroll;
+    }
+    .overlayContent {
+        margin-top: 60px;
+        height: auto;
+        padding: var(--spacing-md);
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+}

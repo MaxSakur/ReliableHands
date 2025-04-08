@@ -6,18 +6,6 @@ export const aboutContent: ContentLinkType[] = [
     description: `
       Сьогодні "Надійні руки" — це клініка професіоналів, де працюють висококваліфіковані фахівці, готові стати підтримкою для кожного власника тварини. Ми розуміємо, що ваші улюбленці — це частинка вашої родини, і тому завжди прагнемо дбати про них із любов'ю та відданістю.
     `,
-    images: [require('../../media/about-1.jpg')]
-  },
-  {
-    name: 'Наша Команда',
-    description: `
-      Сьогодні "Надійні руки" — це клініка професіоналів, де працюють висококваліфіковані фахівці, готові стати підтримкою для кожного власника тварини. Ми розуміємо, що ваші улюбленці — це частинка вашої родини, і тому завжди прагнемо дбати про них із любов'ю та відданістю.
-    `,
-    images: [require('../../media/about-2.jpg')]
-  },
-  {
-    name: 'Як ми працюємо',
-    description: '',
     lists: [
       {
         header: 'Наші цінності',
@@ -29,6 +17,13 @@ export const aboutContent: ContentLinkType[] = [
         ]
       }
     ],
-    images: [require('../../media/about-3.jpg')]
+    images: [
+      require('../../media/about-1.jpg'),
+      require('../../media/about-2.jpg'),
+      require('../../media/about-3.jpg'),
+      require('../../media/about-4.jpg'),
+      require('../../media/about-5.jpg'),
+      require('../../media/about-6.jpg'),
+    ]
   }
 ];
