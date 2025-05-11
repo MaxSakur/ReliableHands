@@ -32,10 +32,13 @@ const Carousel: React.FC<CarouselProps> = ({ media, height }) => {
 
   return (
     <div className="embla">
-      <div className="embla__viewport"  ref={emblaRef}>
+      <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {media.map((url, index) => (
-            <div className="embla__slide" key={index}>
+            <div
+              className="embla__slide"
+              key={index}>
+
               {isVideo(url) ? (
                 <video
                   className="embla__slide__img"
@@ -47,14 +50,30 @@ const Carousel: React.FC<CarouselProps> = ({ media, height }) => {
                   controls={false}
                 />
               ) : (
-                <img
-                  className="embla__slide__img"
-                  src={url}
-                  style={{ objectFit: 'cover', height: `${height}px` }}
-                  alt={`Slide ${index}`}
-                  loading="lazy"
-                />
-              )}
+                <>
+                  <img
+                    className="embla__slide__img"
+                    src={url}
+                    style={{ objectFit: 'contain', height: `${height}px` }}
+                    alt={`Slide ${index}`}
+                    loading="lazy"
+                  />
+                  <div style={{
+                    backgroundImage: `url(${url})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    filter: 'grayscale(1)',
+                    zIndex: -1,
+                    opacity: 0.15,
+                  }} />
+                </>
+              )
+              }
             </div>
           ))}
         </div>

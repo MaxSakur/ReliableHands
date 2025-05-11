@@ -1,29 +1,59 @@
 import { ContentLinkType } from "components/content";
 
-const serviceDefault = require('../../media/service-default.jpg');
-const visualDiagnosis = require('../../media/service-diagnostic.mov');
-const visualDiagnosis2 = require('../../media/service-diagnostic2.jpg');
-const visualDiagnosis3 = require('../../media/service-diagnostic3.jpg');
-const visualDiagnosis4 = require('../../media/service-diagnostic4.jpg');
-const visualDiagnosis5 = require('../../media/service-diagnostic5.jpg');
-const grooming = require('../../media/service-grooming.jpg');
-const grooming2 = require('../../media/service-grooming2.jpg');
+// Загальне
+const serviceDefault = require('../../media/main-1.jpg');
+
+// Терапія
+const therapy1 = require('../../media/therapy-1.jpg');
+const therapy2 = require('../../media/therapy-2.jpg');
+const therapy3 = require('../../media/therapy-3.jpg');
+const therapyVideo = require('../../media/therapy-video.MP4');
+
+// Хірургія
 const surgery = require('../../media/service-surgery.jpg');
 const surgery2 = require('../../media/service-surgery2.jpg');
-const animalHospital = require('../../media/service-animal-hospital.jpg');
-const animalHospital2 = require('../../media/service-animal-hospital2.jpg');
-const animalFood = require('../../media/service-food.jpg');
+const surgeryVideo = require('../../media/surgery-video.mov');
+
+// Візуальна діагностика
+const visualDiagnosis = require('../../media/service-diagnostic.mov');
+const visualDiagnosis3 = require('../../media/service-diagnostic3.jpg');
+const visualDiagnosis6 = require('../../media/service-diagnostic6.jpg');
+const visualDiagnosis7 = require('../../media/service-diagnostic7.jpg');
+
+// Лабораторні дослідження
 const laboratory = require('../../media/service-cure.jpg');
+const laboratory2 = require('../../media/laboratory-2.jpg');
+const laboratory3 = require('../../media/laboratory-3.jpg');
+
+// Корми
+const food1 = require('../../media/food-1.jpg');
+const food2 = require('../../media/food-2.jpg');
+const food3 = require('../../media/food-3.jpg');
+const food4 = require('../../media/food-4.jpg');
+const food5 = require('../../media/food-5.jpg');
+
+// Аптека
+const pharmacy = require('../../media/pharmacy-1.jpg');
+const pharmacy2 = require('../../media/pharmacy-2.jpg');
+
+// Стаціонар для тварин
+const animalHospital1 = require('../../media/animHospital-1.jpg');
+const animalHospital2 = require('../../media/animHospital-2.jpg');
+const animalHospital3 = require('../../media/animHospital-3.jpg');
+const animalHospital4 = require('../../media/animHospital-4.jpg');
+
+// Грумінг
+const grooming = require('../../media/groom-1.jpg');
+const grooming2 = require('../../media/groom-2.jpg');
+const groomingVideo = require('../../media/groom-video.mp4');
+
 
 export const servicesData: ContentLinkType[] = [
     {
       name: 'Загальне',
       description:
-        'Наша клініка надає повний спектр хірургічних послуг, включаючи загальні операції та ортопедичні втручання. Ми використовуємо сучасне обладнання, безпечну анестезію, включаючи інгаляційну. Ми забезпечуємо професійний підхід на всіх етапах — від діагностики до реабілітації. ',
-      lists: [
-        {header: 'Наші хірургічні послуги:', items: ['Планові та екстрені операції (стерилізація, кастрація, видалення новоутворень)','Хірургія внутрішніх органів (операції на шлунково-кишковому тракті, сечовидільній системі тощо)',  'Лікування травм та ран (ушивання, пластика тканин, реконструктивні операції)', 'Корекція завороту повік, корекція брахіоцефалічного синдрому(ринопластика, палатопластика).']},
-        {header: 'Ортопедичні операції:', items: ['Репозиція та фіксація переломів','Остеосинтез (встановлення пластин, гвинтів, спиць)',  'Лікування вивихів та розривів зв’язок', 'Корекція вроджених і набутих деформацій.']}
-      ],
+        '12 вересня 2011 року в самому центрі села Гореничі відкрилася ветеринарна клініка «Ветеринарна допомога». \n\n  Її засновниками стали лікар Висовень Микола Миколайович та його дружина. З великою любов’ю до тварин і щирим бажанням допомагати, вони розпочали шлях, що з роками переріс у масштабну справу життя. \n\n Завдяки довірі наших пацієнтів і наполегливій праці, вже 4 листопада 2016 року ми відкрили нову, простору клініку «Надійні руки» площею 300 м², яка стала сучасним медичним центром для домашніх улюбленців.\n\n Сьогодні «Надійні руки» — це велика команда професійних лікарів, асистентів та адміністраторів, об’єднаних спільною метою: дарувати здоров’я та турботу кожному хвостику, який переступає наш поріг.',
+      lists: [],
       images: [serviceDefault],
     },
     {
@@ -43,13 +73,13 @@ export const servicesData: ContentLinkType[] = [
           ]
         }
       ],
-      images: [serviceDefault],
+      images: [therapy1, therapy2, therapy3, therapyVideo],
     },
     {
       name: 'Хірургія',
       description: 'Надаємо повний спектр хірургічних послуг, включаючи загальні операції та ортопедичні втручання. Ми використовуємо сучасне обладнання, безпечну анестезію, включаючи інгаляційну. Ми забезпечуємо професійний підхід на всіх етапах — від діагностики до реабілітації.',
       lists: [
-        { header: 'Наші хірургічні послуги:',
+        { header: 'Хірургічні послуги:',
         items: [
           'Планові та екстрені операції (стерилізація, кастрація, видалення новоутворень)',
           'Хірургія внутрішніх органів (операції на шлунково-кишковому тракті, сечовидільній системі тощо)',
@@ -67,7 +97,7 @@ export const servicesData: ContentLinkType[] = [
       }
 
       ],
-      images: [surgery, surgery2],
+      images: [surgeryVideo, surgery, surgery2],
     },
     {
       name: 'Візуальна діагностика',
@@ -83,7 +113,7 @@ export const servicesData: ContentLinkType[] = [
           ]
         }
       ],
-      images: [visualDiagnosis, visualDiagnosis2, visualDiagnosis3, visualDiagnosis4, visualDiagnosis5],
+      images: [visualDiagnosis, visualDiagnosis3, visualDiagnosis6, visualDiagnosis7],
     },
     {
       name: 'Лабораторні дослідження',
@@ -103,7 +133,7 @@ export const servicesData: ContentLinkType[] = [
           ]
         }
       ],
-      images: [laboratory],
+      images: [laboratory, laboratory2, laboratory3],
     },
     {
       name: 'Корми',
@@ -130,7 +160,7 @@ export const servicesData: ContentLinkType[] = [
         ]
       }
       ],
-      images: [animalFood],
+      images: [food1, food2, food3, food4, food5],
     },
     {
       name: 'Аптека',
@@ -150,18 +180,18 @@ export const servicesData: ContentLinkType[] = [
           ]
         }
       ],
-      images: [serviceDefault],
+      images: [pharmacy, pharmacy2],
     },
     {
       name: 'Стаціонар для тварин',
-      description: 'Опис для стаціонару для тварин.',
+      description: 'У нашій ветеринарній клініці доступний стаціонар для тварин, де ваші улюбленці отримають якісний догляд і ветеринарну допомогу.\n\n Для великих собак передбачені окремі просторі кімнати, що забезпечують комфортне перебування та знижують рівень стресу.\n\n Також ми пропонуємо готель для тварин, де ваш вихованець буде під наглядом професіоналів у затишних умовах.  Ви можете спокійно займатися своїми справами, знаючи, що ваш улюбленець у надійних руках. Звертайтеся до нас, щоб отримати більше інформації або записатися на послугу!',
       lists: [],
-      images: [animalHospital, animalHospital2],
+      images: [animalHospital1, animalHospital2, animalHospital3, animalHospital4],
     },
     {
       name: 'Грумінг',
       description: 'У нашій ветеринарній клініці доступний широкий спектр послуг для здоров’я та догляду за вашими улюбленцями, зокрема професійний грумінг. Ми подбаємо про чистоту, здоров’я шерсті та шкіри вашого улюбленця, пропонуючи стрижку, купання, тримінг, чистку вух і очей, підстригання кігтів та інші процедури.',
       lists: [],
-      images: [grooming, grooming2],
+      images: [grooming, grooming2, groomingVideo],
     },
   ];

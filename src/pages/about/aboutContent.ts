@@ -24,6 +24,7 @@ export const aboutContent: ContentLinkType[] = [
       require('../../media/about-4.jpg'),
       require('../../media/about-5.jpg'),
       require('../../media/about-6.jpg'),
+      require('../../media/about-7.jpg'),
     ]
   }
 ];
