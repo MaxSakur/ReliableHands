@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ReliableHands/static/css/main.1e30aad3.css",
-    "main.js": "/ReliableHands/static/js/main.046a9d01.js",
+    "main.js": "/ReliableHands/static/js/main.8221f708.js",
     "static/media/service-diagnostic.mov": "/ReliableHands/static/media/service-diagnostic.f6deaf0d705bc8e97412.mov",
     "static/media/groom-video.mp4": "/ReliableHands/static/media/groom-video.b7e97ef79698ad8a4c6f.mp4",
     "static/media/therapy-video.MP4": "/ReliableHands/static/media/therapy-video.484c453e68e219e236f0.MP4",
@@ -47,10 +47,10 @@
     "static/media/laboratory-2.jpg": "/ReliableHands/static/media/laboratory-2.f9e4907639bc6c2cb26a.jpg",
     "index.html": "/ReliableHands/index.html",
     "main.1e30aad3.css.map": "/ReliableHands/static/css/main.1e30aad3.css.map",
-    "main.046a9d01.js.map": "/ReliableHands/static/js/main.046a9d01.js.map"
+    "main.8221f708.js.map": "/ReliableHands/static/js/main.8221f708.js.map"
   },
   "entrypoints": [
     "static/css/main.1e30aad3.css",
-    "static/js/main.046a9d01.js"
+    "static/js/main.8221f708.js"
   ]
 }
