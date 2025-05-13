@@ -30,6 +30,8 @@ const Carousel: React.FC<CarouselProps> = ({ media, height }) => {
     return /\.(mp4|mov|webm)$/i.test(url);
   }, []);
 
+  const isDesktop = typeof window !== 'undefined' && window.innerWidth > 768;
+  console.log('isDesktop', isDesktop);
   return (
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
@@ -41,14 +43,15 @@ const Carousel: React.FC<CarouselProps> = ({ media, height }) => {
 
               {isVideo(url) ? (
                 <video
-                  className="embla__slide__img"
-                  src={url}
-                  autoPlay
-                  style={{ objectFit: 'contain', height: `${height}px` }}
-                  loop
-                  muted
-                  controls={false}
-                />
+                className="embla__slide__img"
+                src={url}
+                autoPlay={isDesktop}
+                style={{ objectFit: 'contain', height: `${height}px` }}
+                loop
+                muted
+                playsInline
+                controls={!isDesktop}
+              />
               ) : (
                 <>
                   <img
